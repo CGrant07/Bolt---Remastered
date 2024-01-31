@@ -47,3 +47,15 @@ async function startProgram() {
 	setMainLed({ r: 255, g:0 , b:0  });
 	
 	await delay (1);
+
+	//Sound 2 Commit
+
+	await roll((getHeading() + -90), 60, .6) 
+	
+	await delay (1);
+	
+	await roll((getHeading() + -85), 60, 1.15) 
+	
+	setMainLed({ r: 0, g:0 , b:0  }); 
+
+	await Sound.Animal.Cat.play(true); 
