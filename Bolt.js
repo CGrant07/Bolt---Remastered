@@ -33,3 +33,17 @@ async function startProgram() {
 	await Sound.Game.Coin.play(true); 
 	
 	await delay (1);
+
+	//Red LED Commit
+
+	await roll((getHeading() + 90), 60, 1.1);  
+	
+	await delay (1); 
+	
+	await roll((getHeading() + 35), 60, 1.05);	
+	
+	await scrollMatrixText('Red!', { r: 255, g: 0, b: 0 }, 30, true)
+	
+	setMainLed({ r: 255, g:0 , b:0  });
+	
+	await delay (1);
