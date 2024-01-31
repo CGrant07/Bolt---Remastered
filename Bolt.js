@@ -93,4 +93,20 @@ async function startProgram() {
 	await scrollMatrixText('Purple!', { r: 255, g: 0, b: 255 }, 30, true) 
 	
 	await delay (1);
+
+	//Finish Commit
 	
+
+	await roll((getHeading() + 35), 60, 1.6)
+	
+	await delay (1);
+	
+	await scrollMatrixText('Finish!', { r: 255, g: 255, b: 255 }, 30, true) 
+	
+	await speak("Finish", true); 
+	
+	
+	
+	
+	
+}	
