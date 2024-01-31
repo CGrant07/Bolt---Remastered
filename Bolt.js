@@ -24,7 +24,7 @@ async function startProgram() {
 
 	//Sound 1 Commit
 
-	await roll((getHeading() + 90), 60, 1.5); 
+	await roll((getHeading() + 90), 60, 1.55); 
 	
 	await delay (1);
 	
