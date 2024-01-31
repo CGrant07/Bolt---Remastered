@@ -12,4 +12,12 @@ async function startProgram() {
 
 	await speak("Start", true); 
 
+	//Blue LED Commit
 	
+	await roll((getHeading() + 0), 60, 2.5); 
+	
+	await delay (1);
+	
+	await setMainLed({ r: 0, g: 0, b: 255 }); 
+	
+	await delay (1);
