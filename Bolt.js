@@ -21,3 +21,15 @@ async function startProgram() {
 	await setMainLed({ r: 0, g: 0, b: 255 }); 
 	
 	await delay (1);
+
+	//Sound 1 Commit
+
+	await roll((getHeading() + 90), 60, 1.5); 
+	
+	await delay (1);
+	
+	setMainLed({ r: 0, g:0 , b:0  });
+	
+	await Sound.Game.Coin.play(true); 
+	
+	await delay (1);
