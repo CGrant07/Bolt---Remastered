@@ -59,3 +59,19 @@ async function startProgram() {
 	setMainLed({ r: 0, g:0 , b:0  }); 
 
 	await Sound.Animal.Cat.play(true); 
+
+	//Green LED Commit
+
+	await roll((getHeading() + 90), 60, .8) 
+	
+	await delay (1);
+	
+	await roll((getHeading() + 90), 60, .6) 
+	
+	await delay (1.5);
+	
+	await roll((getHeading() + -87), 60, .8) 
+	
+	await scrollMatrixText('Green!', { r: 0, g: 255, b: 0 }, 30, true) 
+	
+	setMainLed({ r: 0, g:255 , b:0  }); 
